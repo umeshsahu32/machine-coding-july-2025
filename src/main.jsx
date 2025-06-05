@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./routes/Layout.jsx";
 import {
   Accordion,
+  CountdownTimer,
   CryptoConverter,
   Debounce,
   FilterProduct,
@@ -52,6 +53,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <Accordion />
+          </Suspense>
+        ),
+      },
+      {
+        path: "countdown-timer",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <CountdownTimer />
           </Suspense>
         ),
       },

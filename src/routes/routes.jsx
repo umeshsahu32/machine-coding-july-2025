@@ -1,6 +1,9 @@
 import { lazy } from "react";
 
 export const Accordion = lazy(() => import("../components/UI/Accordion"));
+export const CountdownTimer = lazy(() =>
+  import("../components/UI/CountdownTimer")
+);
 export const CryptoConverter = lazy(() =>
   import("../components/UI/CryptoConverter")
 );
