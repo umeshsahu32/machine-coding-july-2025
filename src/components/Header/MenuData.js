@@ -1,55 +1,43 @@
 export const uiMenu = [
   {
-    id: 4,
+    id: 1,
     path: "accordion",
     title: "Accordion",
   },
   {
-    id: 15,
+    id: 2,
     path: "crypto-converter",
     title: "Crypto Converter",
   },
   {
-    id: 14,
+    id: 3,
     path: "debounce",
     title: "Debounce",
   },
   {
-    id: 1,
+    id: 4,
+    path: "filter-product",
+    title: "Filter Product",
+  },
+  {
+    id: 5,
+    path: "form-validation",
+    title: "Form Validation",
+  },
+  {
+    id: 6,
     path: "grid-light",
     title: "Grid Light",
   },
   {
-    id: 2,
-    path: "tic-tac-toe",
-    title: "Tic Tac Toe",
-  },
-  {
-    id: 3,
-    path: "memory-game",
-    title: "Memory Game",
-  },
-
-  {
-    id: 5,
-    path: "multiple-tabs",
-    title: "Multiple Tabs",
-  },
-  {
-    id: 6,
-    path: "selectable-grid",
-    title: "Selectable Grid",
-  },
-  {
     id: 7,
-    path: "password-generator",
-    title: "Password Generator",
+    path: "infinite-scroll",
+    title: "Infinite Scroll",
   },
-
   {
     id: 8,
-    path: "progress-bar",
-    title: "Progress Bar",
+    path: "job-board",
+    title: "Job Board",
   },
   {
     id: 9,
@@ -58,34 +46,43 @@ export const uiMenu = [
   },
   {
     id: 10,
+    path: "memory-game",
+    title: "Memory Game",
+  },
+  {
+    id: 11,
+    path: "multiple-tabs",
+    title: "Multiple Tabs",
+  },
+  {
+    id: 12,
     path: "nested-comments",
     title: "Nested Comments",
   },
   {
-    id: 11,
-    path: "form-validation",
-    title: "Form Validation",
-  },
-  {
-    id: 12,
-    path: "transfer-list",
-    title: "Transfer List",
-  },
-  {
     id: 13,
-    path: "filter-product",
-    title: "Filter Product",
+    path: "otp-login",
+    title: "OTP Login",
   },
-
+  {
+    id: 14,
+    path: "password-generator",
+    title: "Password Generator",
+  },
+  {
+    id: 15,
+    path: "progress-bar",
+    title: "Progress Bar",
+  },
   {
     id: 16,
-    path: "job-board",
-    title: "Job Board",
+    path: "selectable-grid",
+    title: "Selectable Grid",
   },
   {
     id: 17,
-    path: "infinite-scroll",
-    title: "Infinite Scroll",
+    path: "star-rating",
+    title: "Star Rating",
   },
   {
     id: 18,
@@ -94,14 +91,21 @@ export const uiMenu = [
   },
   {
     id: 19,
-    path: "star-rating",
-    title: "Star Rating",
+    path: "tic-tac-toe",
+    title: "Tic Tac Toe",
   },
+
   {
     id: 20,
-    path: "otp-login",
-    title: "OTP Login",
+    path: "transfer-list",
+    title: "Transfer List",
   },
+  {
+    id: 56,
+    path: "filter-product",
+    title: "Filter Product",
+  },
+
   {
     id: 21,
     path: "image-carousel",
