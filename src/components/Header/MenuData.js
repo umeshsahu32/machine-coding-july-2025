@@ -86,7 +86,7 @@ export const uiMenu = [
   },
   {
     id: 18,
-    path: "drag-and-drop",
+    path: "task-manager",
     title: "Task Manager (Drag & Drop)",
   },
   {
