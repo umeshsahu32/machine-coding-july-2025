@@ -101,12 +101,6 @@ export const uiMenu = [
     title: "Transfer List",
   },
   {
-    id: 56,
-    path: "filter-product",
-    title: "Filter Product",
-  },
-
-  {
     id: 21,
     path: "image-carousel",
     title: "Image Carousel",
