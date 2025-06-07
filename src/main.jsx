@@ -31,6 +31,8 @@ import {
   MultiSelectPills,
   Pagination,
   ModalOverlay,
+  ImageCarousel,
+  MultiStepForm,
 } from "./routes/routes.jsx";
 import { Suspense } from "react";
 import ScrollToTop from "./routes/ScrollToTop.jsx";
@@ -259,6 +261,22 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <ModalOverlay />
+          </Suspense>
+        ),
+      },
+      {
+        path: "image-carousel",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ImageCarousel />
+          </Suspense>
+        ),
+      },
+      {
+        path: "multi-step-form",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <MultiStepForm />
           </Suspense>
         ),
       },

@@ -38,6 +38,12 @@ export const TransferList = lazy(() => import("../components/UI/TransferList"));
 export const Stepper = lazy(() => import("../components/UI/Stepper"));
 export const Pagination = lazy(() => import("../components/UI/Pagination"));
 export const ModalOverlay = lazy(() => import("../components/UI/ModalOverlay"));
+export const ImageCarousel = lazy(() =>
+  import("../components/UI/ImageCarousel")
+);
+export const MultiStepForm = lazy(() =>
+  import("../components/UI/MultiStepForm")
+);
 
 export const MultiSelectPills = lazy(() =>
   import("../components/UI/MultiSelectPills")
