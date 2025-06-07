@@ -146,11 +146,6 @@ export const uiMenu = [
     title: "Currency Converter",
   },
   {
-    id: 30,
-    path: "drag-and-drop-notes",
-    title: "Drag and Drop Notes",
-  },
-  {
     id: 31,
     path: "folder-structure",
     title: "Folder Structure",

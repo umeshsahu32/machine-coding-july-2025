@@ -4,7 +4,7 @@ import { uiMenu } from "./MenuData";
 
 const DropdownMenu = ({ menu }) => {
   return (
-    <div className="absolute top-full -right-4 bg-slate-700 rounded shadow-lg w-60 h-[60vh] z-10 overflow-y-auto">
+    <div className="absolute top-full -right-4 bg-slate-700 rounded shadow-lg w-60 h-[60vh] z-20 overflow-y-auto">
       <div>
         {menu.map((item) => {
           return (

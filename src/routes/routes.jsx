@@ -35,3 +35,13 @@ export const StarRating = lazy(() => import("../components/UI/StarRating"));
 export const TaskManager = lazy(() => import("../components/UI/TaskManager"));
 export const TicTacToe = lazy(() => import("../components/UI/TicTacToe"));
 export const TransferList = lazy(() => import("../components/UI/TransferList"));
+export const Stepper = lazy(() => import("../components/UI/Stepper"));
+export const Pagination = lazy(() => import("../components/UI/Pagination"));
+export const ModalOverlay = lazy(() => import("../components/UI/ModalOverlay"));
+
+export const MultiSelectPills = lazy(() =>
+  import("../components/UI/MultiSelectPills")
+);
+export const CurrencyConverter = lazy(() =>
+  import("../components/UI/CurrencyConverter")
+);

@@ -26,6 +26,11 @@ import {
   TaskManager,
   TicTacToe,
   TransferList,
+  Stepper,
+  CurrencyConverter,
+  MultiSelectPills,
+  Pagination,
+  ModalOverlay,
 } from "./routes/routes.jsx";
 import { Suspense } from "react";
 import ScrollToTop from "./routes/ScrollToTop.jsx";
@@ -214,6 +219,46 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <TransferList />
+          </Suspense>
+        ),
+      },
+      {
+        path: "currency-converter",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <CurrencyConverter />
+          </Suspense>
+        ),
+      },
+      {
+        path: "stepper",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Stepper />
+          </Suspense>
+        ),
+      },
+      {
+        path: "multi-select-pills",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <MultiSelectPills />
+          </Suspense>
+        ),
+      },
+      {
+        path: "pagination",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Pagination />
+          </Suspense>
+        ),
+      },
+      {
+        path: "modal-overlay",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ModalOverlay />
           </Suspense>
         ),
       },
