@@ -6,9 +6,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./routes/Layout.jsx";
 import {
   Accordion,
+  ChipsInput,
+  FolderStructure,
+  NestedCheckbox,
   CountdownTimer,
   CryptoConverter,
-  Debounce,
   FilterProduct,
   FormValidation,
   GridLight,
@@ -33,6 +35,7 @@ import {
   ModalOverlay,
   ImageCarousel,
   MultiStepForm,
+  AutoSuggestionSearch,
 } from "./routes/routes.jsx";
 import { Suspense } from "react";
 import ScrollToTop from "./routes/ScrollToTop.jsx";
@@ -64,6 +67,22 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "auto-suggestion-search",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <AutoSuggestionSearch />
+          </Suspense>
+        ),
+      },
+      {
+        path: "chips-input",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ChipsInput />
+          </Suspense>
+        ),
+      },
+      {
         path: "countdown-timer",
         element: (
           <Suspense fallback={<p>Loading...</p>}>
@@ -80,10 +99,10 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "debounce",
+        path: "currency-converter",
         element: (
           <Suspense fallback={<p>Loading...</p>}>
-            <Debounce />
+            <CurrencyConverter />
           </Suspense>
         ),
       },
@@ -92,6 +111,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <FilterProduct />
+          </Suspense>
+        ),
+      },
+      {
+        path: "folder-structure",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <FolderStructure />
           </Suspense>
         ),
       },
@@ -108,6 +135,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <GridLight />
+          </Suspense>
+        ),
+      },
+      {
+        path: "image-carousel",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ImageCarousel />
           </Suspense>
         ),
       },
@@ -144,10 +179,42 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "modal-overlay",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ModalOverlay />
+          </Suspense>
+        ),
+      },
+      {
         path: "multiple-tabs",
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <MultipleTabs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "multi-select-pills",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <MultiSelectPills />
+          </Suspense>
+        ),
+      },
+      {
+        path: "multi-step-form",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <MultiStepForm />
+          </Suspense>
+        ),
+      },
+      {
+        path: "nested-checkbox",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <NestedCheckbox />
           </Suspense>
         ),
       },
@@ -164,6 +231,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <OTPLogin />
+          </Suspense>
+        ),
+      },
+      {
+        path: "pagination",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Pagination />
           </Suspense>
         ),
       },
@@ -201,6 +276,14 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "stepper",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <Stepper />
+          </Suspense>
+        ),
+      },
+      {
         path: "task-manager",
         element: (
           <Suspense fallback={<p>Loading...</p>}>
@@ -221,62 +304,6 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <TransferList />
-          </Suspense>
-        ),
-      },
-      {
-        path: "currency-converter",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <CurrencyConverter />
-          </Suspense>
-        ),
-      },
-      {
-        path: "stepper",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <Stepper />
-          </Suspense>
-        ),
-      },
-      {
-        path: "multi-select-pills",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <MultiSelectPills />
-          </Suspense>
-        ),
-      },
-      {
-        path: "pagination",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <Pagination />
-          </Suspense>
-        ),
-      },
-      {
-        path: "modal-overlay",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <ModalOverlay />
-          </Suspense>
-        ),
-      },
-      {
-        path: "image-carousel",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <ImageCarousel />
-          </Suspense>
-        ),
-      },
-      {
-        path: "multi-step-form",
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
-            <MultiStepForm />
           </Suspense>
         ),
       },
