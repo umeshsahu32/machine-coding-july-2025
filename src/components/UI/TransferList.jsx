@@ -99,7 +99,9 @@ const TransferList = () => {
         <div className="flex flex-col gap-6">
           <button
             className={`${btnClass} ${
-              isSomeItemChecked(leftItems) ? "" : "cursor-not-allowed"
+              isSomeItemChecked(leftItems)
+                ? ""
+                : "cursor-not-allowed opacity-50"
             }`}
             onClick={() => handleTransferBtn("LEFT_TO_RIGHT")}
             disabled={!isSomeItemChecked(leftItems)}
@@ -108,7 +110,9 @@ const TransferList = () => {
           </button>
           <button
             className={`${btnClass} ${
-              isSomeItemChecked(rightItems) ? "" : "cursor-not-allowed"
+              isSomeItemChecked(rightItems)
+                ? ""
+                : "cursor-not-allowed opacity-50"
             }`}
             onClick={() => handleTransferBtn("RIGHT_TO_LEFT")}
             disabled={!isSomeItemChecked(rightItems)}
